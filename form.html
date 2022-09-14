@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link data-critical="true" rel="stylesheet" href="css/form-cards-credit-uikit.css"></link>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+		<script src="js/scipt.js"></script>
+</head>
+<body>
+<div id="form"><div class="ab2OADyP7 mb2OADyP7 cb2OADyP7">
+	<div class="eb2OADyP7">
+		  <form action="">
+		  			        <div class="name">
+      <input type="text" name="username" id="username">
+      <label for="username">Username</label>
+      <div class="warning">
+        UserName must not be empty and must be less than 12 characters and must not contain (/ or . or ")
+      </div>
+    </div>
+        <div class="email">
+      <input type="email" name="email" id="email">
+      <label for="email">Email</label>
+      <div class="warning ">
+        Email must not be empty try writing a valid Email
+      </div>
+    </div>
+    <div class="pass">
+      <input type="password" name="password" id="password">
+      <label for="password">Password</label>
+      <div class="warning">
+        must be more than 12 characters try to type a strong password use numbers, characters, symbols 
+      </div>
+    </div>
+		    <div class="field-wrapper">
+		       <label for="firstName">Фамилия</label>
+		       <input type="text" name="firstName" value="" name="username" id="username" class="text-field-input" placeholder="Введите Фамилию" autofocus required />
+		       <div class="warning">
+		        Вы не заполнили фармилию
+		      </div>
+		    </div>
+		    <div class="field-wrapper">
+		       <label for="surname">Имя</label>
+		       <input type="text" name="name" value="" iname="username" id="username" class="text-field-input" placeholder="Введите Имя" autofocus required />
+		    </div>
+		    <div class="field-wrapper">
+		       <label for="firstName">Отчество</label>
+		       <input type="text" name="firstName" value="" name="username" id="username" class="text-field-input" placeholder="Введите Отчество" autofocus required />
+		    </div>
+		    <div class="field-wrapper">
+		       <label for="firstName">Телефон</label>
+		       <input type="text" name="firstName" value="" id="patronymic" class="text-field-input phone"  autofocus required />
+		    </div>
+		    <div class="field-wrapper">
+		      <input type="submit" value="submit" id="button">
+		    </div>
+		  </form>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+  
+  $('.text-field-input').on('focus', function(){
+    $(this).closest('.field-wrapper').addClass('focused');
+  });
+  
+  $('.text-field-input').on('blur', function(){
+ 
+    if  ( $(this).val() === '') {
+       $(this).closest('.field-wrapper').removeClass('focused');
+    }
+  });
+  
+})
+	</script>
+	<script type="text/javascript">
+$(".phone").mask("+7(999)999-9999"); // vvalid number
+		$('document').ready(function() { // vvalid 
+  $('#button').on('click', function() {
+    $('input[required]').addClass('req');
+  });
+});
+	</script>
+</body>
+</html>
