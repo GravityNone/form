@@ -11,54 +11,218 @@
 		<script src="js/scipt.js"></script>
 </head>
 <body>
-<div id="form"><div class="ab2OADyP7 mb2OADyP7 cb2OADyP7">
-	<div class="eb2OADyP7">
-		  <form action="">
-		  			        <div class="name">
-      <input type="text" name="username" id="username">
-      <label for="username">Username</label>
-      <div class="warning">
-        UserName must not be empty and must be less than 12 characters and must not contain (/ or . or ")
-      </div>
-    </div>
-        <div class="email">
-      <input type="email" name="email" id="email">
-      <label for="email">Email</label>
-      <div class="warning ">
-        Email must not be empty try writing a valid Email
-      </div>
-    </div>
-    <div class="pass">
-      <input type="password" name="password" id="password">
-      <label for="password">Password</label>
-      <div class="warning">
-        must be more than 12 characters try to type a strong password use numbers, characters, symbols 
-      </div>
-    </div>
-		    <div class="field-wrapper">
-		       <label for="firstName">Фамилия</label>
-		       <input type="text" name="firstName" value="" name="username" id="username" class="text-field-input" placeholder="Введите Фамилию" autofocus required />
-		       <div class="warning">
-		        Вы не заполнили фармилию
-		      </div>
-		    </div>
-		    <div class="field-wrapper">
-		       <label for="surname">Имя</label>
-		       <input type="text" name="name" value="" iname="username" id="username" class="text-field-input" placeholder="Введите Имя" autofocus required />
-		    </div>
-		    <div class="field-wrapper">
-		       <label for="firstName">Отчество</label>
-		       <input type="text" name="firstName" value="" name="username" id="username" class="text-field-input" placeholder="Введите Отчество" autofocus required />
-		    </div>
-		    <div class="field-wrapper">
-		       <label for="firstName">Телефон</label>
-		       <input type="text" name="firstName" value="" id="patronymic" class="text-field-input phone"  autofocus required />
-		    </div>
-		    <div class="field-wrapper">
-		      <input type="submit" value="submit" id="button">
-		    </div>
-		  </form>
+<div id="form">
+	<div class="ab2OADyP7 mb2OADyP7 cb2OADyP7">
+		<div class="eb2OADyP7">
+			  <form action="">
+				    <div class="field-wrapper">
+				       <label for="firstName">Фамилия</label>
+				       <input type="text" name="firstName" value="" name="username" id="username" class="text-field-input" placeholder="Введите Фамилию" autofocus required />
+				       <div class="warning">
+				        Вы не заполнили фармилию
+				      </div>
+				    </div>
+				    <div class="field-wrapper">
+				       <label for="surname">Имя</label>
+				       <input type="text" name="name" value="" iname="username" id="username" class="text-field-input" placeholder="Введите Имя" autofocus required />
+				    </div>
+				    <div class="field-wrapper">
+				       <label for="firstName">Отчество</label>
+				       <input type="text" name="firstName" value="" name="username" id="username" class="text-field-input" placeholder="Введите Отчество" autofocus required />
+				    </div>
+				    <div class="field-wrapper">
+				       <label for="firstName">Телефон</label>
+				       <input type="text" name="number" value="" id="number" class="text-field-input phone"  autofocus required />
+				    </div>
+				    <div class="field-wrapper">
+				       <label for="firstName">E-mail</label>
+				       <input type="email" name="firstName" size="30" value="" id="patronymic" class="text-field-input" placeholder="Введите E-mail через @"  autofocus required />
+				    </div>
+				    <div class="field-wrapper">
+				        <div class="dropdown">
+					        <div class="select">
+					          <span>Выберите пол</span>
+					          <i class="fa fa-chevron-left"></i>
+					        </div>
+					        <input type="hidden" name="gender" autofocus required>
+					        <ul class="dropdown-menu">
+					          <li id="male">Мужчина</li>
+					          <li id="female">Женщина</li>
+					        </ul>
+	      				</div>
+	      			</div>
+				    <div class="field-wrapper">
+				       <label for="firstName">Статус соискателя</label>
+				       <input type="text" name="status" value="" name="status" id="status" class="text-field-input" placeholder="Введите Статус соискателя" autofocus required />
+				    </div>
+				    <div class="field-wrapper">
+				       <label for="firstName">Дата рождения</label>
+				       <input type="text" name="date" value="" name="date" id="status" class="text-field-input date" autofocus required />
+				    </div>
+				    <div class="field-wrapper">
+				        <div class="dropdown">
+					        <div class="select">
+					          <span>Знак зодиака</span>
+					          <i class="fa fa-chevron-left"></i>
+					        </div>
+					        <input type="hidden" name="gender">
+					        <ul class="dropdown-menu">
+					          <li id="vodoley">Водолей</li>
+					          <li id="oven">Овен</li>
+					        </ul>
+	      				</div>
+	      			</div>
+				    <div class="field-wrapper">
+				        <div class="dropdown">
+					        <div class="select">
+					          <span>Образование</span>
+					          <i class="fa fa-chevron-left"></i>
+					        </div>
+					        <input type="hidden" name="gender" required>
+					        <ul class="dropdown-menu">
+					          <li id="">Высшее</li>
+					          <li id="">Средне-специальное</li>
+  					          <li id="">Базовое</li>
+					        </ul>
+	      				</div>
+	      			</div>
+				    <div class="field-wrapper">
+				        <div class="dropdown">
+					        <div class="select">
+					          <span>Семейное положение</span>
+					          <i class="fa fa-chevron-left"></i>
+					        </div>
+					        <input type="hidden" name="gender">
+					        <ul class="dropdown-menu">
+					          <li id="">Женат\Жената</li>
+					          <li id="">Холост\Не замужем</li>
+  					          <li id="">В активном поиске</li>
+					        </ul>
+	      				</div>
+	      			</div>
+				    <div class="field-wrapper">
+				        <div class="dropdown">
+					        <div class="select">
+					          <span>Наличие детей</span>
+					          <i class="fa fa-chevron-left"></i>
+					        </div>
+					        <input type="hidden" name="gender">
+					        <ul class="dropdown-menu">
+					          <li id="">Нету</li>
+					          <li id="">1</li>
+  					          <li id="">2</li>
+					        </ul>
+	      				</div>
+	      			</div>
+					<div class="field-wrapper">
+				        <div class="dropdown">
+					        <div class="select">
+					          <span>Регион\Населенный пунт проживания</span>
+					          <i class="fa fa-chevron-left"></i>
+					        </div>
+					        <input type="hidden" name="gender">
+					        <ul class="dropdown-menu">
+					          <li id="">Центральный</li>
+					        </ul>
+	      				</div>
+	      			</div>
+	      			<div class="double">
+					    <div class="field-wrapper">
+					       <label for="firstName">Улица</label>
+					       <input type="text" name="status" value="" name="status" id="status" class="text-field-input" placeholder="Введите адресс вашей улицы" autofocus required />
+					    </div>
+					    <div class="field-wrapper">
+   					       <label for="firstName">Дом</label>
+					       <input type="text" name="status" value="" name="status" id="status" class="text-field-input" placeholder="Введите номер дома" autofocus required />
+					    </div>
+	      			</div>
+				    <div class="field-wrapper">
+				        <div class="dropdown">
+					        <div class="select">
+					          <span>Район проживания</span>
+					          <i class="fa fa-chevron-left"></i>
+					        </div>
+					        <input type="hidden" name="gender" required>
+					        <ul class="dropdown-menu">
+					          <li id="">Сормовский</li>
+					          <li id=""></li>
+  					          <li id=""></li>
+					        </ul>
+	      				</div>
+	      			</div>
+				    <div class="field-wrapper">
+				        <div class="dropdown">
+					        <div class="select">
+					          <span>Гражданство</span>
+					          <i class="fa fa-chevron-left"></i>
+					        </div>
+					        <input type="hidden" name="gender" required>
+					        <ul class="dropdown-menu">
+					          <li id="">РФ</li>
+					          <li id="">Казахстан</li>
+  					          <li id="">РБ</li>
+					        </ul>
+	      				</div>
+	      			</div>
+	      			<div class="double">
+					    <!--<div class="field-wrapper">
+   					       <label for="firstName">Последние два места работы</label>
+					       <input type="text" name="status" value="" name="status" id="status" class="text-field-input" placeholder="Последнее место работы" autofocus required />
+					    </div>
+					    <div class="field-wrapper">
+   					       <label for="firstName">Последние два места работы</label>
+					       <input type="text" name="status" value="" name="status" id="status" class="text-field-input" placeholder="Последнее место работы" autofocus required />
+					    </div>-->
+				        <div class="dropdown">
+					        <div class="select">
+					          <span>Последние два места работы</span>
+					          <i class="fa fa-chevron-left"></i>
+					        </div>
+					        <input type="hidden" name="gender" required>
+					        <ul class="dropdown-menu">
+					          <li id="">РФ</li>
+					          <li id="">Казахстан</li>
+  					          <li id="">РБ</li>
+					        </ul>
+	      				</div>
+	      			</div>
+	      			<div class="ab1XYHwOt bb1XYHwOt">
+	      				<div data-qa-type="uikit/formGroup.element" class="cb1XYHwOt" style="flex-grow: 1;">	<div class="ab1umcg7W bb1umcg7W" data-qa-type="uikit/formRow" data-field-name="fio_title">
+		      					<div class="ab3k1NHqN db3k1NHqN">
+		      						<div data-qa-type="uikit/sectionTitle">
+		      							<h5><span>Укажите способы связи</span></h5>
+		      						</div>
+		      					</div>
+		      					<div data-qa-type="uikit/CollapseBlock" class="ab1k1TM2D" style="height: 0px; overflow: hidden;">
+		      						<div class="bb1k1TM2D cb1k1TM2D"></div>
+		      					</div>
+		      				</div>
+		      			</div>
+		      		</div>
+				    <div class="field-wrapper">
+				      <input type="submit" value="submit" id="button">
+				    </div>
+			  </form>
+		</div>
 	</div>
+</div>
+<!-- Select Gender !-->
+<script type="text/javascript">
+	$('.dropdown').click(function () {
+        $(this).attr('tabindex', 1).focus();
+        $(this).toggleClass('active');
+        $(this).find('.dropdown-menu').slideToggle(300);
+    });
+    $('.dropdown').focusout(function () {
+        $(this).removeClass('active');
+        $(this).find('.dropdown-menu').slideUp(300);
+    });
+    $('.dropdown .dropdown-menu li').click(function () {
+        $(this).parents('.dropdown').find('span').text($(this).text());
+        $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
+    });
+</script>
+<!-- Focused button !-->
 	<script type="text/javascript">
 		$(document).ready(function(){
   
@@ -75,8 +239,10 @@
   
 })
 	</script>
+<!-- requipted !-->
 	<script type="text/javascript">
 $(".phone").mask("+7(999)999-9999"); // vvalid number
+$(".date").mask("99.99.9999"); // vvalid number
 		$('document').ready(function() { // vvalid 
   $('#button').on('click', function() {
     $('input[required]').addClass('req');
