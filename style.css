@@ -19,18 +19,30 @@
   top: -20px;
 } 
 
-
+#button{
+  background-color: var(--tds-color-primary,#ffdd2d);
+    border: 1px solid var(--tds-color-primary,#ffdd2d);
+    box-sizing: border-box;
+    color: var(--tds-color-text-01,rgba(0,0,0,.8));
+    position: relative;
+    transition-duration: .25s;
+    transition-property: background-color,border-color,box-shadow;
+    transition-timing-function: ease;
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+}
 label {
     position: relative;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 1em;
+    font-size: 11px;
     position: absolute;
     top: 0px;
     display: inline-block;
     margin: 8px 5px;
     line-height: 1.4em;
-    padding: 10px;
+    padding: 5px;
     transition: all .2s linear;
     text-transform: capitalize;
     z-index: 1;
