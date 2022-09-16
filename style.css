@@ -262,7 +262,7 @@ input:focus:-ms-input-placeholder      {opacity: 1; transition: opacity 1s ease;
 } 
 .dropdown .dropdown-menu {
     padding: 0;
-    list-style: none
+    list-style: none;
 }
 .dropdown .dropdown-menu li:hover {
     background-color: #f2f2f2
