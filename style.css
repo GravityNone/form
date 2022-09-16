@@ -3,6 +3,9 @@
   margin: auto;
   padding: 20px;
 }
+input::placeholder {
+    transform: translateX(10px);
+}
 
 .field-wrapper {
   display: block;
@@ -28,7 +31,7 @@
     font: 400 15px/24px dsText,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
     height: 56px;
     letter-spacing: 0;
-    padding: 6px 12px;
+    padding: 6px 5px;
 
 }
 
@@ -83,6 +86,7 @@ label {
   display: none;
 }
 
+
 input[type="text"],
 input[type="email"]{
     -webkit-appearance: textfield;
@@ -93,7 +97,7 @@ input[type="email"]{
     bottom: 0;
     color: inherit;
     font: inherit;
-    left: 17px;
+    left: 0px;
     margin: 0;
     min-width: 4px;
     outline: 0;
@@ -135,6 +139,7 @@ input:invalid {
   transform: rotatez(45deg);
   z-index: 0;
 }
+
 .double{
       display: flex;
     flex-direction: column;
@@ -264,4 +269,8 @@ input:focus:-ms-input-placeholder      {opacity: 1; transition: opacity 1s ease;
 }
 .dropdown .dropdown-menu li:active {
     background-color: #e2e2e2
+}
+input[disabled] {
+    opacity: .6;
+    cursor: not-allowed;
 }
